@@ -1,17 +1,25 @@
 package com.invest.model;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 public class PurchaseTracker {
-    private int id;
+    private long id;
     private String stockName;
-    private BigDecimal purchasePrice;
+    private double purchasePrice;
     private int quantity;
     private Date purchaseDate;
     private Date sellDate;
 
-    public int getId() {
+    public PurchaseTracker(long id, String stockName, double purchasePrice, int quantity, Date purchaseDate, Date sellDate) {
+        this.id = id;
+        this.stockName = stockName;
+        this.purchasePrice = purchasePrice;
+        this.quantity = quantity;
+        this.purchaseDate = purchaseDate;
+        this.sellDate = sellDate;
+    }
+
+    public long getId() {
         return id;
     }
 
@@ -27,11 +35,11 @@ public class PurchaseTracker {
         this.stockName = stockName;
     }
 
-    public BigDecimal getPurchasePrice() {
+    public double getPurchasePrice() {
         return purchasePrice;
     }
 
-    public void setPurchasePrice(BigDecimal purchasePrice) {
+    public void setPurchasePrice(double purchasePrice) {
         this.purchasePrice = purchasePrice;
     }
 
