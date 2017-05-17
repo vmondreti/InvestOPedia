@@ -3,12 +3,14 @@ package com.invest.dao;
 import com.invest.model.PurchaseTracker;
 import com.invest.service.PurchaseTrackerServiceImpl;
 import com.invest.util.DateUtils;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-public class PurchaseTrackerDaoImpl {
+@Component
+public class PurchaseTrackerDaoImpl implements PurchaseTrackerDAO {
 
     private static final AtomicLong counter = new AtomicLong();
 

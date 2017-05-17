@@ -1,9 +1,12 @@
 package com.invest.service;
 
+import com.invest.dao.PurchaseTrackerDAO;
 import com.invest.model.PurchaseTracker;
+import org.jmock.auto.Mock;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -16,9 +19,12 @@ public class PurchaseTrackerServiceImplTest {
 
     private PurchaseTrackerServiceImpl purchaseTrackerService;
 
+    @Mock
+    PurchaseTrackerDAO purchaseTrackerDAO;
+
     @Before
     public void setUp() throws Exception {
-        purchaseTrackerService = new PurchaseTrackerServiceImpl();
+        //purchaseTrackerService = new PurchaseTrackerServiceImpl();
     }
 
     @Test
