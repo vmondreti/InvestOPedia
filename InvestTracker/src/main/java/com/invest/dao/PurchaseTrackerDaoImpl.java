@@ -14,7 +14,7 @@ public class PurchaseTrackerDaoImpl implements PurchaseTrackerDAO {
 
     private static final AtomicLong counter = new AtomicLong();
 
-    public List<PurchaseTracker> populateDummyUsers() {
+    public List<PurchaseTracker> populateDummyPurchases() {
         List<PurchaseTracker> users = new ArrayList<PurchaseTracker>();
         users.add(new PurchaseTracker(counter.incrementAndGet(), "TSLA", 190.10, 2, DateUtils.sysdate, null));
         users.add(new PurchaseTracker(counter.incrementAndGet(), "SNAP", 21.2, 10, DateUtils.sysdate, null));

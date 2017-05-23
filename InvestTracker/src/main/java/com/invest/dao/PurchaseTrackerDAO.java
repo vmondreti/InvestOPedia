@@ -9,5 +9,5 @@ import java.util.List;
  */
 public interface PurchaseTrackerDAO {
 
-    List<PurchaseTracker> populateDummyUsers();
+    List<PurchaseTracker> populateDummyPurchases();
 }

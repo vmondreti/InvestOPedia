@@ -52,7 +52,7 @@ public class PurchaseStockControllerTest {
 
         mockery.checking(new Expectations(){
             {
-                allowing(purchaseTrackerDao).populateDummyUsers();
+                allowing(purchaseTrackerDao).populateDummyPurchases();
                 will(returnValue(purchaseTrackers));
                 allowing(purchaseTrackerService).getPurchaseList();
                 will(returnValue(purchaseTrackers));

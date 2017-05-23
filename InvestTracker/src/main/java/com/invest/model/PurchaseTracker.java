@@ -1,7 +1,10 @@
 package com.invest.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
+@Document(collection = "PurchaseTracker")
 public class PurchaseTracker {
     private long id;
     private String stockName;

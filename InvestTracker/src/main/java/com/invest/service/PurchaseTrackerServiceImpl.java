@@ -19,7 +19,7 @@ public class PurchaseTrackerServiceImpl implements IPurchaseTrackerService {
 
     @Override
     public List<PurchaseTracker> getPurchaseList() {
-        return purchaseTrackerDao.populateDummyUsers();
+        return purchaseTrackerDao.populateDummyPurchases();
     }
 
 }
